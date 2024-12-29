@@ -13,7 +13,7 @@ export default function Home() {
                 className="options flex flex-col
               gap-3 w-[50%] items-center"
               >
-                <div className="select flex gap-2 w-[150%]  justify-center">
+                <div className="select flex gap-2 w-[150%] justify-center">
                   <span className="font-semibold">circle number</span>
                   <select
                     className="w-15"
@@ -69,7 +69,10 @@ export default function Home() {
               Output
             </label>
             <div className="content css-content">
-              <div className="results" id="displaySetNotation"></div>
+              <div
+                className="results text-black bg-yellow-300"
+                id="displaySetNotation"
+              ></div>
             </div>
           </div>
         </form>
