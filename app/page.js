@@ -2,10 +2,10 @@
 
 export default function Home() {
   return (
-    <main>
+    <main className="h-[85vh] flex flex-col justify-center">
       <script defer type="text/javascript" src="/js/main.js"></script>
       <script defer type="text/javascript" src="/js/mcCluskyMethod.js"></script>
-      <div id="container">
+      <div className id="container">
         <form name="form1">
           <div className="w-[100vw] flex justify-center mb-2">
             <div className="content css-content w-[80%]  flex justify-center">
@@ -48,7 +48,12 @@ export default function Home() {
           </div>
           <div className="flex w-[100vw] justify-center">
             <div className="content">
-              <canvas id="venn" width="400" height="400"></canvas>
+              <canvas
+                id="venn"
+                width="400"
+                height="400"
+                className="w-[300px] h-[300px] md:w-[450px] md:h-[450px]"
+              ></canvas>
               {/* <script>
               // mouse positioning not currently working in react/nextjs environment
                 document.getElementById("venn").addEventListener("mousedown", function (e) {
@@ -57,7 +62,7 @@ export default function Home() {
               </script> */}
             </div>
           </div>
-          <div className="container">
+          <div className="container w-[92vw] pl-7 md:w-[100vh]">
             <input
               type="checkbox"
               onChange={() => null}
@@ -70,7 +75,7 @@ export default function Home() {
             </label>
             <div className="content css-content">
               <div
-                className="results text-black bg-yellow-300"
+                className="results text-black bg-yellow-300 "
                 id="displaySetNotation"
               ></div>
             </div>
